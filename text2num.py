@@ -19,6 +19,7 @@ def text2num(textnum, numwords={}):
 
     current = result = 0
     nsbuffer = ""
+    textnum = textnum.strip()
     testw = textnum.lower().split()
     if testw[0] in scales:
         textnum="one "+textnum
